@@ -1,0 +1,17 @@
+path: '/content' # dataset root dir
+train: images/train  # train images (relative to 'path')
+val: images/validation  # val images (relative to 'path')
+test: images/test
+
+# Classes
+names:
+  0: alooparatha
+  1: rasgulla
+  2: biryani
+  3: chickentikka
+  4: palakpaneer
+  5: poha
+  6: khichdi
+  7: omelette
+  8: plainrice
+  9: chapati
