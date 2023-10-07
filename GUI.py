@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Jun 24 13:18:34 2023
-
-@author: shais
-"""
-
-
 import numpy as np
 import torch
 import cv2
