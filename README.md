@@ -1,32 +1,27 @@
 <a href="https://apps.apple.com/app/id1452689527" target="_blank">
-<img src="https://user-images.githubusercontent.com/26833433/82944393-f7644d80-9f4f-11ea-8b87-1a5b04f555f1.jpg" width="1000"></a>
 
 
 
 
 
-## YOLO V5s Bdd100k training
+
+## Object Detection model
 
 The following documents is necessary for my project:
 
-- models/custom_yolov5s.yaml
-- models/uc_data.yaml
-- data/bdd100k.names
-- weights/yolov5s.pt
-- yolov5s_training_bdd100k.ipynb
-- Bdd_preprocessing.ipynb
+- data.yaml
+- yolov5detection.ipynb
+- yolov8detection.ipynb
 
-The process documents of training with pre-trained weights located in the `runs/exp0_yolov5s_bdd_prew`
 
-The process documents of training from scratch located in the `yolov5s_bdd100k/runs/exp1_yolov5s_bdd`
+![YOLOv5 architecture](https://drive.google.com/file/d/1bKudqiYG9L0DqvdwYfT9JqjmCL1Ut6gV/view?usp=sharing)
 
-The yolov5s model arcitecture image is `yolov5s_bdd.png`
 
 The 4k test.video was shown in the bilibili website: **https://www.bilibili.com/video/BV1sz4y1Q7wi/**
 
 I provide the preprocessed Bdd100k dataset: **https://1drv.ms/u/s!An7G4eYRvZzthI5HCnVaEGvrdiDWAw?e=v6C4US**
 
-
+## YOLO V5x training
 
 ## YOLO V5 Originial Readme 
 
