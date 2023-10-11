@@ -101,7 +101,7 @@ def inference(RES_DIR, data_path):
 
 Download [COCO](https://github.com/ultralytics/yolov5/blob/master/data/get_coco2017.sh), install [Apex](https://github.com/NVIDIA/apex) and run command below. Training times for YOLOv5s/m/l/x are 2/4/6/8 days on a single V100 (multi-GPU times faster). Use the largest `--batch-size` your GPU allows (batch sizes shown for 16 GB devices).
 ```bash
-$ python train.py --data coco.yaml --cfg yolov5s.yaml --weights '' --batch-size 64
+$ python train.py --data.yaml --cfg yolov5s.yaml --weights '' --batch-size 64
                                          yolov5m                                48
                                          yolov5l                                32
                                          yolov5x                                16
@@ -118,9 +118,6 @@ To access an up-to-date working environment (with all dependencies including CUD
 - **Docker Image** https://hub.docker.com/r/ultralytics/yolov5. See [Docker Quickstart Guide](https://github.com/ultralytics/yolov5/wiki/Docker-Quickstart) ![Docker Pulls](https://img.shields.io/docker/pulls/ultralytics/yolov5?logo=docker)
 
 
-## Citation
-
-[![DOI](https://zenodo.org/badge/264818686.svg)](https://zenodo.org/badge/latestdoi/264818686)
 
 
 ## About Us
