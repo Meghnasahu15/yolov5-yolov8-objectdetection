@@ -17,11 +17,10 @@ The following documents is necessary for my project:
 ![YOLOv5 architecture](https://drive.google.com/file/d/1bKudqiYG9L0DqvdwYfT9JqjmCL1Ut6gV/view?usp=sharing)
 
 
-The 4k test.video was shown in the bilibili website: **https://www.bilibili.com/video/BV1sz4y1Q7wi/**
+![YOLOv8 architecture](https://drive.google.com/file/d/1G2Mye_CEJsWLGJ5jwUbzPegZ5rSto5jm/view?usp=sharing)
 
-I provide the preprocessed Bdd100k dataset: **https://1drv.ms/u/s!An7G4eYRvZzthI5HCnVaEGvrdiDWAw?e=v6C4US**
 
-## YOLO V5x training
+I provide the preprocessed dataset: **https://drive.google.com/file/d/1riRjfOPhtEhlePhuYNlvCS1uH1JWxgJn/view?usp=sharing**
 
 ## YOLO V5 Originial Readme 
 
@@ -75,29 +74,25 @@ $ pip install -U -r requirements.txt
 
 ## Inference
 
-Inference can be run on most common media formats. Model [checkpoints](https://drive.google.com/open?id=1Drs_Aiu7xx6S-ix95f9kNsA6ueKRpN2J) are downloaded automatically if available. Results are saved to `./inference/output`.
+Inference can be run on most common media formats. Model [checkpoints](https://drive.google.com/open?id=1Drs_Aiu7xx6S-ix95f9kNsA6ueKRpN2J) are downloaded automatically if available. Results are saved to `.runs/train`.
 ```bash
-$ python detect.py --source file.jpg  # image 
-                            file.mp4  # video
-                            ./dir  # directory
-                            0  # webcam
-                            rtsp://170.93.143.139/rtplive/470011e600ef003a004ee33696235daa  # rtsp stream
-                            http://112.50.243.8/PLTV/88888888/224/3221225900/1.m3u8  # http stream
-```
+!python detect.py --weights runs/train/{RES_DIR}/weights/best.pt \
+    --source {data_path} --name {INFER_DIR}
 
-To run inference on examples in the `./inference/images` folder:
 
-```bash
-$ python detect.py --source ./inference/images/ --weights yolov5s.pt --conf 0.4
+# Helper function for inference on images.
+def inference(RES_DIR, data_path):
+    # Directory to store inference results.
+    infer_dir_count = len(glob.glob('runs/detect/*'))
+    print(f"Current number of inference detection directories: {infer_dir_count}")
+    INFER_DIR = f"inference_{infer_dir_count+1}"
+    print(INFER_DIR)
+    # Inference on images.
+    !python detect.py --weights runs/train/{RES_DIR}/weights/best.pt \
+    --source {data_path} --name {INFER_DIR}
+    return INFER_DIR
 
-Namespace(agnostic_nms=False, augment=False, classes=None, conf_thres=0.4, device='', fourcc='mp4v', half=False, img_size=640, iou_thres=0.5, output='inference/output', save_txt=False, source='./inference/images/', view_img=False, weights='yolov5s.pt')
-Using CUDA device0 _CudaDeviceProperties(name='Tesla P100-PCIE-16GB', total_memory=16280MB)
 
-Downloading https://drive.google.com/uc?export=download&id=1R5T6rIyy3lLwgFXNms8whc-387H0tMQO as yolov5s.pt... Done (2.6s)
-
-image 1/2 inference/images/bus.jpg: 640x512 3 persons, 1 buss, Done. (0.009s)
-image 2/2 inference/images/zidane.jpg: 384x640 2 persons, 2 ties, Done. (0.009s)
-Results saved to /content/yolov5/inference/output
 ```
 
 <img src="https://user-images.githubusercontent.com/26833433/83082816-59e54880-a039-11ea-8abe-ab90cc1ec4b0.jpeg" width="500">  
