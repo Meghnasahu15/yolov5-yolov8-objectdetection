@@ -118,11 +118,11 @@ To access an up-to-date working environment (with all dependencies including CUD
 - **Docker Image** https://hub.docker.com/r/ultralytics/yolov5. See [Docker Quickstart Guide](https://github.com/ultralytics/yolov5/wiki/Docker-Quickstart) ![Docker Pulls](https://img.shields.io/docker/pulls/ultralytics/yolov5?logo=docker)
 
 
-##YOLOv8 Original ReadMe
+## YOLOv8 Original ReadMe
 <div align="center">
   <p>
     <a href="https://yolovision.ultralytics.com/" target="_blank">
-      <img width="100%" src="https://raw.githubusercontent.com/ultralytics/assets/main/im/banner-yolo-vision-2023.png"></a>
+      <img width="100%" ></a>
   </p>
 
 [English](README.md) | [简体中文](README.zh-CN.md)
@@ -389,7 +389,7 @@ For Ultralytics bug reports and feature requests please visit [GitHub Issues](ht
 <br>
 <div align="center">
   <a href="https://github.com/ultralytics" style="text-decoration:none;">
-    <img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-github.png" width="3%" alt="" /></a>
+    
   <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="" />
   <a href="https://www.linkedin.com/company/ultralytics/" style="text-decoration:none;">
     <img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-linkedin.png" width="3%" alt="" /></a>
@@ -401,11 +401,11 @@ For Ultralytics bug reports and feature requests please visit [GitHub Issues](ht
     <img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-youtube.png" width="3%" alt="" /></a>
   <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="" />
   <a href="https://www.tiktok.com/@ultralytics" style="text-decoration:none;">
-    <img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-tiktok.png" width="3%" alt="" /></a>
+    
   <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="" />
   <a href="https://www.instagram.com/ultralytics/" style="text-decoration:none;">
     <img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-instagram.png" width="3%" alt="" /></a>
-  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="" />
+  
   <a href="https://ultralytics.com/discord" style="text-decoration:none;">
     <img src="https://github.com/ultralytics/assets/blob/main/social/logo-social-discord.png" width="3%" alt="" /></a>
 </div>
@@ -420,7 +420,3 @@ Ultralytics is a U.S.-based particle physics and AI startup with over 6 years of
 
 For business inquiries and professional support requests please visit us at https://www.ultralytics.com. 
 
-
-## Contact
-
-**Issues should be raised directly in the repository.** For business inquiries or professional support requests please visit https://www.ultralytics.com or email Glenn Jocher at glenn.jocher@ultralytics.com. 
