@@ -95,7 +95,7 @@ def inference(RES_DIR, data_path):
 
 ```
 
-<img src="https://user-images.githubusercontent.com/26833433/83082816-59e54880-a039-11ea-8abe-ab90cc1ec4b0.jpeg" width="500">  
+<img src="https://drive.google.com/file/d/19y1zL5vQcN09SjxDMKSbXjgghRmSjvOh/view?usp=sharing" width="500">  
 
 ## Reproduce Our Training
 
