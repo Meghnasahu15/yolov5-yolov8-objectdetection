@@ -337,7 +337,7 @@ Our key integrations with leading AI platforms extend the functionality of Ultra
 
 <br>
 <a href="https://bit.ly/ultralytics_hub" target="_blank">
-<img width="100%" src="https://github.com/ultralytics/assets/raw/main/yolov8/banner-integrations.png"></a>
+
 <br>
 <br>
 
